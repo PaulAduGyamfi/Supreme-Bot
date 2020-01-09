@@ -5,4 +5,4 @@
 <img src="supremebotapp.gif">
 
 <h1>Run server</h1>
-	<p>Run <i>node server.js</i> to start local server. Navigate to http://localhost:3000.</p> 
+	<p>Use command line prompts to locate app folder. Then run <i>node server.js</i> to start local server. Navigate to http://localhost:3000.</p> 
