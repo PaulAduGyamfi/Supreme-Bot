@@ -1,0 +1,232 @@
+*{
+    font-family: "Courier New", Courier;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fafafa;
+    -webkit-app-region: drag;
+  }
+  
+header{
+    position: relative;
+    display: block;
+    height: 20vh;
+    margin: 1em 2em;
+    padding: 1em;
+}
+  .header-wrap{
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 45%;
+      width: fit-content;
+      height: fit-content;
+      line-height: 3em;
+  }
+  .head{
+    margin: 0 auto;
+    height: 45px;
+    width: 150px;
+    /* background-image: url('./asset_imgs/suoreme-letter-transp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%; */
+  }
+  
+
+#today, #zone{
+    font-weight: lighter;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+
+
+img{
+    display: block;
+    margin: 0 auto;
+    height: 45px;
+    width: 150px;
+}
+.form-wrap{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+}
+form{
+    margin: 0 auto;
+    padding: 1em;
+
+}
+.details-wrap{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+.form-right{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 1em;
+}
+.billing-wrap{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em 0 1em;
+}
+.billing-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.date{
+    display: flex;
+    flex-direction: row;
+
+}
+.cvv{
+    width: 10%;
+    
+}
+.product-details-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+}
+.product-details-top{
+    display: flex;
+    flex-direction: row;
+
+}
+.category{
+    width: 70%;
+}
+.category select{
+    width: 100%;
+}
+
+
+.product-details-top, .product-details-bottom{
+    padding: 0.3em;
+    width: 100%;
+}
+.key, .color{
+    padding: 0.5em;
+}
+.customer-details-wrap{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #f4f4f460;
+    padding: 0 1em;
+    margin-top: 1em;
+}
+.customer-details{
+    padding: 0.5em 0.75em;
+}
+.details-wrap{
+    margin-bottom: 5em;
+}
+
+.details-wrap input{
+    width: 100%;
+    color: #111;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.address-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.address1 {
+    width: 70%;
+}
+.address2 {
+    width: 30%;
+}
+.zip-city-state{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.zip {
+    width: 20%;
+}
+.city {
+    width: 60%;
+}
+.state, .month, .year, .category, .size{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0;
+    height: 25px;
+    margin-left: 0.7em;
+}
+ select {
+    border: 0;
+    background: transparent;
+    appearance: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.submit{
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    border: 1px solid rgb(251, 0, 5);
+    background-color: rgb(251, 0, 5);
+}
+.submit:hover{
+    background-color: #a40000;
+    border-color: #a40000;
+}
+
+.submit input{
+    color: #fff;
+    padding: 8px 20px;
+   border: 0;
+   background: transparent;
+   appearance: none;
+   font-size: 13px;
+   cursor: pointer;
+   width: 100%;
+   font-weight: bold;
+    text-align: center;
+    outline: none;
+}
+
+footer{
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    bottom: 0;
+    font-size: 12px;
+    text-align: center;
+}
+.footer-element{
+    margin: 0 1em;
+}
+.footer-element a{
+    text-decoration: none;
+    color: black;
+}
+.footer-element a:hover{
+    color: #fff;
+    background-color: rgb(251, 0, 5);
+}
+
+.hide { position:absolute; top:-1px; left:-1px; width:1px; height:1px; }

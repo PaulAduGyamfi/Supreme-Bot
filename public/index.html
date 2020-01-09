@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>SupremeBotApp</title>
+    <link rel="icon" href="./asset_imgs/title_logo.ico" type="image/icon type">
+</head>
+<body onload="update()">
+    <!--- <h1>SUPREME BOT</h1> ---->
+    <header>
+        <div class="header-wrap">
+                <div class="head"><a href="https://www.supremenewyork.com/shop/all" onclick="window.open(this.href); return false;"><img src="./asset_imgs/head_logo_OG.png" alt=""></a></div>
+                <div class="todays_date" id="today">
+                        <time id="date-time"></time>
+                        <span id="zone">NYC</span>
+                </div>
+        </div>
+    </header>
+    <iframe name="hiddenFrame" class="hide"></iframe>
+    <div class="form-wrap">
+        <form action="/user_info" method="POST" target="hiddenFrame">
+            <div class="details-wrap">
+                    <div class="form-right">
+                            <div class="billing-wrap">
+                                <div class="billing-top">
+                                    <div class="customer-details number">
+                                            <input type="text" name="cc" placeholder="number">
+                                    </div>
+                                </div>
+                                <div class="billing-bottom">
+                                   <div class="date">
+                                        <div class="customer-details month">
+                                                <select name="expMonth" >
+                                                        <option value="01">01</option>
+                                                        <option value="02">02</option>
+                                                        <option value="03">03</option>
+                                                        <option value="04">04</option>
+                                                        <option value="05">05</option>
+                                                        <option value="06">06</option>
+                                                        <option value="07">07</option>
+                                                        <option value="08">08</option>
+                                                        <option value="09">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                    </select>
+                                        </div>
+                                        <div class="customer-details year">
+                                                <select name="expYear" >
+                                                        <option value="1">2020</option>
+                                                        <option value="2">2021</option>
+                                                        <option value="3">2022</option>
+                                                        <option value="4">2023</option>
+                                                        <option value="5">2024</option>
+                                                        <option value="6">2025</option>
+                                                        <option value="7">2026</option>
+                                                        <option value="8">2027</option>
+                                                        <option value="9">2028</option>
+                                                        <option value="10">2029</option>
+                                                        <option value="11">2030</option>
+                                                    </select>
+                                        </div>
+                                   </div>
+                                    <div class="customer-details cvv">
+                                            <input type="text" name="cvv" placeholder="CVV">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-details-wrap">
+                                    <div class="product-details-top">
+                                            <div class="product-details category">
+                                                    <select name="category" >
+                                                            <option value="jackets">jackets</option>
+                                                            <option value="shirts">shirts</option>
+                                                            <option value="tops_sweaters">tops/sweaters</option>
+                                                            <option value="sweatshirts">sweatshirts</option>
+                                                            <option value="pants">pants</option>
+                                                            <option value="t-shirts">t-shirts</option>
+                                                            <option value="hats">hats</option>
+                                                            <option value="bags">bags</option>
+                                                            <option value="accessories">accessories</option>
+                                                            <option value="skate">skate</option>
+                                                        </select>
+                                            </div>
+                                            <div class="product-details size">
+                                                    <select name="size" >
+                                                            <option value="0">Small</option>
+                                                            <option value="1">Medium</option>
+                                                            <option value="2">Large</option>
+                                                            <option value="3">XLarge</option>
+                                                            <option value="">N/a</option>
+                                                        </select>
+                                            </div>
+                                    </div>
+                
+                                    <div class="product-details-bottom">
+                                            <div class="product-details key">
+                                                    <input type="text" name="keyWord"  placeholder="key word">
+                                            </div>
+                        
+                                            <div class="product-details color">
+                                                    <input type="text" name="color"  placeholder="color">
+                                            </div>
+                                    </div>
+                                    
+                            </div>
+                    </div>
+                    <div class="customer-details-wrap">
+                            <div class="name-email-phone">
+                                    <div class="customer-details fullname">
+                                            <input type="text" name="name"  placeholder="name">
+                                    </div>
+                                    <div class="customer-details email">
+                                            <input type="text" name="email"  placeholder="email">
+                                    </div>
+                                    <div class="customer-details phone">
+                                            <input type="text" name="phone"  placeholder="tel">
+                                    </div>
+                            </div>
+                            <div class="address-row">
+                                    <div class="customer-details address1">
+                                            <input type="text" name="addressL1"  placeholder="address">
+                                    </div>
+                                    <div class="customer-details address2">
+                                            <input type="text" name="addressL2"  placeholder="apt, unit, etc">
+                                    </div>
+                            </div>
+                            <div class="zip-city-state">
+                                    <div class="customer-details zip" >
+                                            <input type="text" name="zip"  placeholder="zip">
+                                    </div>
+                                    <div class="customer-details city">
+                                            <input type="text" name="city"  placeholder="city">
+                                    </div>
+                                    <div class="customer-details state">
+                                            <select name="state" >
+                                                    <option value="AL">AL</option>
+                                                    <option value="AK">AK</option>
+                                                    <option value="AR">AR</option>	
+                                                    <option value="AZ">AZ</option>
+                                                    <option value="CA">CA</option>
+                                                    <option value="CO">CO</option>
+                                                    <option value="CT">CT</option>
+                                                    <option value="DC">DC</option>
+                                                    <option value="DE">DE</option>
+                                                    <option value="FL">FL</option>
+                                                    <option value="GA">GA</option>
+                                                    <option value="HI">HI</option>
+                                                    <option value="IA">IA</option>	
+                                                    <option value="ID">ID</option>
+                                                    <option value="IL">IL</option>
+                                                    <option value="IN">IN</option>
+                                                    <option value="KS">KS</option>
+                                                    <option value="KY">KY</option>
+                                                    <option value="LA">LA</option>
+                                                    <option value="MA">MA</option>
+                                                    <option value="MD">MD</option>
+                                                    <option value="ME">ME</option>
+                                                    <option value="MI">MI</option>
+                                                    <option value="MN">MN</option>
+                                                    <option value="MO">MO</option>	
+                                                    <option value="MS">MS</option>
+                                                    <option value="MT">MT</option>
+                                                    <option value="NC">NC</option>	
+                                                    <option value="NE">NE</option>
+                                                    <option value="NH">NH</option>
+                                                    <option value="NJ">NJ</option>
+                                                    <option value="NM">NM</option>			
+                                                    <option value="NV">NV</option>
+                                                    <option value="NY">NY</option>
+                                                    <option value="ND">ND</option>
+                                                    <option value="OH">OH</option>
+                                                    <option value="OK">OK</option>
+                                                    <option value="OR">OR</option>
+                                                    <option value="PA">PA</option>
+                                                    <option value="RI">RI</option>
+                                                    <option value="SC">SC</option>
+                                                    <option value="SD">SD</option>
+                                                    <option value="TN">TN</option>
+                                                    <option value="TX">TX</option>
+                                                    <option value="UT">UT</option>
+                                                    <option value="VT">VT</option>
+                                                    <option value="VA">VA</option>
+                                                    <option value="WA">WA</option>
+                                                    <option value="WI">WI</option>	
+                                                    <option value="WV">WV</option>
+                                                    <option value="WY">WY</option>
+                                                </select>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+            <div class="submit">
+                    <input type="submit" value="Run" name="submit" id="submit">
+            </div>
+        
+        </form>
+    </div>
+    <!-- <script type="module">
+        import '../app.js';
+    </script>  -->
+    <footer>
+        <span class="footer-element"><a href="https://github.com/PaulAduGyamfi/SupremeBotApp/blob/master/README.md" onclick="window.open(this.href); return false;">about</a></span>
+        <span class="footer-element"><a href="https://www.supremecommunity.com/" onclick="window.open(this.href); return false;">keywords</a></span>
+        <span class="footer-element"><a href="https://www.supremecommunity.com/" onclick="window.open(this.href); return false;">droplist</a></span>
+</footer>
+
+      <script>
+       
+
+
+function update(){
+        var d = new Date();
+let month = d.getMonth() + 1;
+let day = d.getDay()+5;
+let year = d.getFullYear();
+
+let hour = d.getHours();
+let minute = d.getMinutes();
+
+let ampm = "am";
+if (month < 10) {
+        month = "0" + month;
+}
+if (day < 10) {
+        day = "0" + day;
+}
+if (hour < 10) {
+        hour = "0" + hour;
+}
+if (minute < 10) {
+        minute = "0" + minute;
+}
+
+
+if( hour > 12 ) {
+        hour -= 12;
+    ampm = "pm";
+}
+    document.getElementById('date-time').innerHTML = `${month}/${day}/${year}  ${hour}:${minute}${ampm}`;
+
+    var t = setTimeout(update, 1000);
+}
+
+        
+        
+
+
+
+      </script>
+</body>
+</html>
