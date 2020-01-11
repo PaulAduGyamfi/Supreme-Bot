@@ -13,4 +13,4 @@ Then run <i>node server.js</i> to start local server
 		<code>node server.js</code>
 		Navigate to http://localhost:3000 in chrome browser.
 		 
-
+<img src="Screen Shot .png">
