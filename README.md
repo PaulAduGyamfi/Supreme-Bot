@@ -4,13 +4,18 @@
  
 <img src="supremebotapp.gif">
 
-<h1>Run server</h1>
-	<p>Use command line prompts to locate the app folder
-		<code>cd SupremeBotApp/</code>
-	</p>
+# Run server
+Requirements:
+* node.js 7+
+
+Use command line prompts to locate the app folder
+
+<code>cd SupremeBotApp/</code>
 	
-Then run <i>node server.js</i> to start local server
-		<code>node server.js</code>
-		Navigate to http://localhost:3000 in chrome browser.
+Then run *node server.js* to start local server
+
+<code>node server.js</code>
+
+Navigate to http://localhost:3000 in chrome browser.
 		 
 <img src="Screen Shot .png">
