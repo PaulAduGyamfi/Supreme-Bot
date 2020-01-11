@@ -5,7 +5,16 @@ A web application that runs on a local http  node js server, uses selenium web-d
  
 <img src="supremebotapp.gif">
 
-# Run server
+# Requirements
+* Google Chrome Browser for desktop
+
+# Features
+* **Auto Checkout** - Product will automatically be selected and added to cart and checked out at checkout page. 
+* **AutoFill** - Your information (name, address, cc) will automatically be enter into repective fields.  
+* **Size choice** - for every applicable category of product. 
+* **Simple configuration** 
+
+# Configuration
 Requirements:
 * node.js 7+
 
