@@ -98,10 +98,10 @@ until = webdriver.until;
 //opens uo new chrom browser
 
 var driver = new webdriver.Builder().forBrowser('chrome').build();
-var url = driver.get(`https://www.supremenewyork.com/shop/all/${category.toLowerCase()}`);
+ driver.get(`https://www.supremenewyork.com/shop/all/${category.toLowerCase()}`);
 
 //looking for item
-driver.findElements(By.css('.inner-article')).then((articleItems)=>{
+ driver.findElements(By.css('.inner-article')).then((articleItems)=>{
     articleItems.map((artItem)=>{
         artItem.getText().then((a)=>{
         
@@ -154,7 +154,7 @@ driver.findElements(By.css('.inner-article')).then((articleItems)=>{
             console.log("Entering Billing info...");
         }).then(()=>{
             driver.sleep(2000).then(()=>{
-                driver.findElement(By.xpath('//*[@id="pay"]/input')).click();
+                // driver.findElement(By.xpath('//*[@id="pay"]/input')).click();
                 console.log("Checkout Succesful!!");
             });
         });
