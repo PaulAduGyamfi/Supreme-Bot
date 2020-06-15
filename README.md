@@ -23,6 +23,12 @@ Use command line prompts to locate the app folder
 ```
 cd SupremeBotApp/
 ```
+
+Run *npm install* to install all the necessary dependecies
+
+```
+npm install
+```
 	
 Then run *node server.js* to start local server
 
