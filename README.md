@@ -15,6 +15,7 @@ A web application that runs on a local http  node js server, uses selenium web-d
 * **Simple configuration** 
 
 # Configuration
+[No coding experience needed, just follow the steps below!]
 Requirements:
 * node.js 7+
 * Download the latest version of chromedriver from https://chromedriver.storage.googleapis.com/index.html?path=83.0.4103.39/ and replace the chromedriver in the folder
